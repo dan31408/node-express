@@ -12,6 +12,7 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 
 app.use('/campsites', campsiteRouter);
+app.use('/promotions', promotionRouter);
 
 app.use(express.static(__dirname + '/public'));
 
